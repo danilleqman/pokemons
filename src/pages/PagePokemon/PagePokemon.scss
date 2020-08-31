@@ -1,0 +1,80 @@
+.pokemon {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  align-items: center;
+  align-content: center;
+  overflow: auto;
+  flex-direction: column;
+  text-align: center;
+
+  .specifications {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .img {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .header {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .ability-button {
+    padding: 10px;
+    max-width: 200px;
+    min-width: 120px;
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid aqua;
+    background-color: white;
+    transition: all 1s;
+
+    &:hover {
+      background-color: aqua;
+    }
+  }
+
+  .abilities {
+    grid-column: 4;
+    grid-row: 2;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    overflow: auto;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .pokemon {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+
+    .specifications {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    .img {
+      grid-column: 1;
+      grid-row: 2;
+      text-align: center;
+    }
+
+    .header {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .abilities {
+      grid-column: 1;
+      grid-row: 4;
+    }
+  }
+}

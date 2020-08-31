@@ -1,0 +1,24 @@
+.button {
+  padding: 20px;
+
+  border-radius: 50%;
+  margin: 20px;
+  border: 1px solid aqua;
+  background-color: white;
+  transition: all 1s;
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  &:hover {
+    background-color: aqua;
+  }
+}
+
+@media (max-width: 720px) {
+  .button {
+    padding: 10px;
+    margin: 10px;
+  }
+}

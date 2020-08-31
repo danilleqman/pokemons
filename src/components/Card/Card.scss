@@ -1,0 +1,27 @@
+.card {
+  display: inline-block;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 2px #ccc;
+  width: 280px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+
+  img {
+    width: 280px;
+  }
+
+  &:hover {
+    background-color: #fafafa;
+  }
+}
+
+@media (min-width: 800px) {
+  .card {
+    width: 400px;
+
+    img {
+      width: 360px;
+    }
+  }
+}
